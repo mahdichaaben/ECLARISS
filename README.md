@@ -56,7 +56,7 @@ A smart surveillance system integrating **Face Recognition**, **Real-time RTSP S
 - This diagram provides an overview of the RTSP architecture used in the system.
 
 ### 6. **How system work**
-![RTMP with Nginx](images/facerecog.png)
+![RTMP with Nginx](images/Facerecog.png)
 ![RTMP with Nginx](images/liveStreamArch.png)
 ![RTMP with Nginx](images/mqtt_hive.png)
 
