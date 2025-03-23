@@ -105,7 +105,7 @@ python app.py
 pip install -r requirements.txt
 
 # Start the server for Face Recognition, Person Detection, and Video Streaming
-python app.py
+python server.py
 ```
 
 ### 3. Start NGINX and MediaMTX
