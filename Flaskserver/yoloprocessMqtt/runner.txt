@@ -1,0 +1,1 @@
+ ffmpeg -f dshow -framerate 30 -video_size 640x480 -i video="HD Webcam" -c:v libx264 -preset veryfast -tune zerolatency -f rtsp rtsp://192.168.1.12:8554/mystream

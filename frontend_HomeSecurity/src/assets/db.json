@@ -1,0 +1,68 @@
+{
+    "database": [
+        {
+            "userId": "user1",
+            "total_size_MB": 19.53,
+            "cameras": [
+                {
+                    "camera_name": "camera",
+                    "detection": [
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://192.168.1.12:80\\database\\user1\\camera\\detection\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "recordings": [
+                        {
+                            "camera_17-08-24-15-36-25": {
+                                "url": "http://192.168.1.12:80\\database\\user1\\camera\\recordings\\camera_17-08-24-15-36-25\\cam.m3u8",
+                                "size_MB": 4.95
+                            }
+                        },
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://192.168.1.12:80\\database\\user1\\camera\\recordings\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "total_size_MB": 19.53
+                }
+            ]
+        },
+        {
+            "userId": "user2",
+            "total_size_MB": 19.53,
+            "cameras": [
+                {
+                    "camera_name": "camera",
+                    "detection": [
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://192.168.1.12:80\\database\\user2\\camera\\detection\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "recordings": [
+                        {
+                            "camera_17-08-24-15-36-25": {
+                                "url": "http://192.168.1.12:80\\database\\user2\\camera\\recordings\\camera_17-08-24-15-36-25\\cam.m3u8",
+                                "size_MB": 4.95
+                            }
+                        },
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://192.168.1.12:80\\database\\user2\\camera\\recordings\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "total_size_MB": 19.53
+                }
+            ]
+        }
+    ]
+}

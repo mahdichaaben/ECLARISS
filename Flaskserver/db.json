@@ -1,0 +1,95 @@
+{
+    "database": [
+        {
+            "userId": "user1",
+            "total_size_MB": 52.64000000000001,
+            "cameras": [
+                {
+                    "cameraID": "camera1",
+                    "detection": [],
+                    "recordings": [
+                        {
+                            "camera1_08-09-24-00-42-42": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_08-09-24-00-42-42\\cam.m3u8",
+                                "size_MB": 29.52
+                            }
+                        },
+                        {
+                            "camera1_08-09-24-18-28-10": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_08-09-24-18-28-10\\cam.m3u8",
+                                "size_MB": 0.78
+                            }
+                        },
+                        {
+                            "camera1_11-09-24-10-03-19": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_11-09-24-10-03-19\\cam.m3u8",
+                                "size_MB": 7.07
+                            }
+                        },
+                        {
+                            "camera1_17-08-24-15-36-25": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_17-08-24-15-36-25\\cam.m3u8",
+                                "size_MB": 4.95
+                            }
+                        },
+                        {
+                            "camera1_21-09-24-19-28-41": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_21-09-24-19-28-41\\cam.m3u8",
+                                "size_MB": 7.43
+                            }
+                        },
+                        {
+                            "camera1_29-08-24-02-09-26": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_29-08-24-02-09-26\\cam.m3u8",
+                                "size_MB": 1.35
+                            }
+                        },
+                        {
+                            "camera1_29-08-24-02-10-21": {
+                                "url": "http://localhost:80\\database\\user1\\camera1\\recordings\\camera1_29-08-24-02-10-21\\cam.m3u8",
+                                "size_MB": 1.54
+                            }
+                        }
+                    ],
+                    "total_size_MB": 52.64000000000001,
+                    "rtmpUrl": "http://localhost:80\\database\\user1\\camera1\\detection\\camera1_17-08-24-15-45-24\\cam.m3u8",
+                    "webrtcUrl": "http://localhost:8889/camera1"
+                }
+            ]
+        },
+        {
+            "userId": "user2",
+            "total_size_MB": 19.53,
+            "cameras": [
+                {
+                    "cameraID": "camera",
+                    "detection": [
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://localhost:80\\database\\user2\\camera\\detection\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "recordings": [
+                        {
+                            "camera_17-08-24-15-36-25": {
+                                "url": "http://localhost:80\\database\\user2\\camera\\recordings\\camera_17-08-24-15-36-25\\cam.m3u8",
+                                "size_MB": 4.95
+                            }
+                        },
+                        {
+                            "camera_17-08-24-15-45-24": {
+                                "url": "http://localhost:80\\database\\user2\\camera\\recordings\\camera_17-08-24-15-45-24\\cam.m3u8",
+                                "size_MB": 7.29
+                            }
+                        }
+                    ],
+                    "total_size_MB": 19.53,
+                    "rtmpUrl": "http://localhost:80\\database\\user2\\camera\\detection\\camera_17-08-24-15-45-24\\cam.m3u8",
+                    "webrtcUrl": "http://localhost:8889/camera"
+                }
+            ]
+        }
+    ]
+}

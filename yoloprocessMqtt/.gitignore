@@ -1,0 +1,59 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Environment variables file (Never push sensitive data)
+.env
+.env.local
+.env.development
+.env.production
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Virtual environment directory
+venv/
+.env/
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+*.coveragerc
+nosetests.xml
+coverage.xml
+*.coveralls
+
+# Dist and build directories for packaging
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.bak
+*.swp
+*~
+
+# Flask specific files
+*.db
+
+# IDE specific directories or files
+.idea/
+
+# Compiled Python files
+*.pyc

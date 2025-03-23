@@ -1,0 +1,4 @@
+{
+    "rtmpUrl": "http://localhost:80",
+    "webrtcUrl": "http://localhost:8889"
+}

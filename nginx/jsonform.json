@@ -1,0 +1,78 @@
+{
+    "database": [
+      {
+        "userId": "user1",
+        "cameras": [
+            {
+                "camera_name": "camera1",
+                "detection" : [
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+    
+                    { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+     
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+     
+                ],
+                "recordings":  [
+    
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+    
+                    { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+     
+                    { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+     
+                ]
+        },
+        {
+            "camera_name": "camera1",
+            "detection" : [
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+                { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+ 
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+ 
+            ],
+            "recordings":  [
+
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+                { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+ 
+                { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+ 
+            ]
+    },
+    {
+        "camera_name": "camera2",
+        "detection" : [
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+            { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+        ],
+        "recordings":  [
+
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+            { "camera_17-08-24-15-40-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+            { "camera_17-08-24-15-45-24":"http://localhost:5000/database/user1/cameras/camera_17-08-24-15-45-24/detection/cam.m3u8"},
+
+        ]
+}
+
+      
+    ]
+}
+
+          
+         

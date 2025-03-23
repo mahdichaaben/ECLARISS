@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<MPD
+    type="dynamic"
+    xmlns="urn:mpeg:dash:schema:mpd:2011"
+    availabilityStartTime="2024-09-21T18:24:05Z"
+    publishTime="2024-09-21T18:36:35Z"
+    minimumUpdatePeriod="PT5S"
+    minBufferTime="PT5S"
+    timeShiftBufferDepth="PT21S"
+    profiles="urn:hbbtv:dash:profile:isoff-live:2012,urn:mpeg:dash:profile:isoff-live:2011"
+    xmlns:xsi="http://www.w3.org/2011/XMLSchema-instance"
+    xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 DASH-MPD.xsd">
+  <Period start="PT0S" id="dash">
+    <AdaptationSet
+        id="1"
+        segmentAlignment="true"
+        maxWidth="640"
+        maxHeight="480"
+        maxFrameRate="15">
+      <Representation
+          id="camera1_H264"
+          mimeType="video/mp4"
+          codecs="avc1.f40016"
+          width="640"
+          height="480"
+          frameRate="15"
+          startWithSAP="1"
+          bandwidth="0">
+        <SegmentTemplate
+            timescale="1000"
+            media="$Time$.m4v"
+            initialization="init.m4v">
+          <SegmentTimeline>
+             <S t="709933" d="6667"/>
+             <S t="716600" d="10000"/>
+             <S t="726600" d="6667"/>
+             <S t="733267" d="10000"/>
+             <S t="743267" d="6666"/>
+             <S t="749933" d="6800"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

@@ -1,0 +1,9 @@
+{
+    "name": "mahdichtest",
+    "role": "Editor",
+    "status": "Active",
+    "dateAdded": "2024-08-13",
+    "Dataset": [
+        "static/data_faces_from_camera/person_13_mahdichtest/img_face_3.jpg"
+    ]
+}

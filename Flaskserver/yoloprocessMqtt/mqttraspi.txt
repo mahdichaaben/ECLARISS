@@ -1,0 +1,79 @@
+import subprocess
+import paho.mqtt.client as mqtt
+
+class CameraStreamer:
+    def __init__(self, mqtt_host, mqtt_port, mqtt_topic, rtmp_url):
+        self.mqtt_host = mqtt_host
+        self.mqtt_port = mqtt_port
+        self.mqtt_topic = mqtt_topic
+        self.rtmp_url = rtmp_url
+        self.streaming = False
+        self.process = None
+
+        # Set up MQTT client
+        self.client = mqtt.Client()
+        self.client.on_connect = self.on_connect
+        self.client.message_callback_add(self.mqtt_topic, self.on_message)
+        self.client.connect(self.mqtt_host, self.mqtt_port)
+        self.client.loop_start()
+
+    def on_connect(self, client, userdata, flags, rc):
+        """Callback for successful connection to MQTT broker."""
+        print(f"Connected to MQTT broker with result code {rc}")
+        client.subscribe(self.mqtt_topic)
+
+    def on_message(self, client, userdata, msg):
+        """Callback for received MQTT messages."""
+        message = msg.payload.decode()
+        print(f"Received message: {message}")
+
+        if message == "START":
+            self.start_streaming()
+        elif message == "STOP":
+            self.stop_streaming()
+
+    def start_streaming(self):
+        """Start streaming using FFmpeg."""
+        if not self.streaming:
+            print("Starting streaming...")
+            command = [
+                'ffmpeg',
+                '-f', 'v4l2',             # Input format
+                '-i', '/dev/video0',       # Input device (camera)
+                '-c:v', 'libx264',         # Video codec (software-based H.264)
+                '-b:v', '500k',            # Bitrate (lower to reduce CPU usage)
+                '-s', '320x240',           # Resolution (lower resolution)
+                '-r', '15',                # Frame rate (lower frame rate to reduce CPU usage)
+                '-f', 'flv',               # Output format
+                self.rtmp_url               # RTMP URL
+            ]
+
+            self.process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            self.streaming = True
+            print("Streaming started.")
+
+    def stop_streaming(self):
+        """Stop the FFmpeg streaming process."""
+        if self.streaming:
+            print("Stopping streaming...")
+            if self.process:
+                self.process.terminate()
+                self.process.wait()
+                self.process = None
+                self.streaming = False
+                print("Streaming stopped.")
+
+    def __del__(self):
+        """Clean up on object deletion."""
+        self.stop_streaming()
+        self.client.loop_stop()
+        self.client.disconnect()
+
+if __name__ == "__main__":
+    # Replace these with your actual MQTT and RTMP details
+    MQTT_HOST = "mqtt.example.com"
+    MQTT_PORT = 1883
+    MQTT_TOPIC = "camera/control"
+    RTMP_URL = "rtmp://your-rtmp-server/live/stream-key"
+
+    streamer = CameraStreamer(MQTT_HOST, MQTT_PORT, MQTT_TOPIC, RTMP_URL)

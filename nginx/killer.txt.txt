@@ -1,0 +1,2 @@
+tasklist /FI "IMAGENAME eq nginx.exe"
+taskkill /F /IM nginx.exe
