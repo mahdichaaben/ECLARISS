@@ -20,7 +20,7 @@ A smart surveillance system integrating **Face Recognition**, **Real-time RTSP S
    - **Nginx** for RTMP-to-HLS conversion, allowing recordings to be stored and accessed.
 
 4. **Person Detection**:
-   - Real-time video processing using **YOLO algorithms**.
+   - Real-time video processing using YOLOv8: The system leverages Ultralytics YOLOv8
    - Detects persons in video frames and triggers alerts when motion or people are detected.
 
 5. **Flask Backend**:
