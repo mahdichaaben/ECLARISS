@@ -142,6 +142,17 @@ After setting up all components, access the web interface by navigating to:
 http://localhost:3000
 ```
 
+
+## Demo Videos
+
+### System Overview
+[![System Overview](https://drive.google.com/uc?export=view&id=1Fsk0TYrKU5v-nFn7cqHcPakWOvyHHkrj)](https://drive.google.com/file/d/1Fsk0TYrKU5v-nFn7cqHcPakWOvyHHkrj/preview)
+*Click the image above to watch the system overview video*
+
+### Alternative Embedding Method
+<iframe src="https://drive.google.com/file/d/1Fsk0TYrKU5v-nFn7cqHcPakWOvyHHkrj/preview" width="640" height="360" allow="autoplay"></iframe>
+
+
 ## Troubleshooting
 - Ensure all IP addresses in configuration files match your network setup
 - Verify MQTT credentials are correctly set in environment variables
