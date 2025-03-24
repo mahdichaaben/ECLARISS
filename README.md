@@ -1,4 +1,4 @@
- ##🔒 ECLARISS – Smart Home Security System  
+ ## ECLARISS – Smart Home Security System   🔒
 
 ECLARISS is a **smart AI-powered surveillance system** for **real-time home monitoring**. It uses **Face Recognition, RTSP Streaming, Flask Backend**, and **YOLO-based Person Detection** to enhance home security.   
 
